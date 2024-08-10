@@ -1,24 +1,32 @@
 <script src="../javascript/index.js"></script>
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         To-do List
-       </title>
+    </title>
 </head>
+
 <body>
     <div id="titulo" name="titulo">
-        <h1>
-            TO-DO LIST
-        </h1>
+        <div id="leveTilt" name="leveTilt">
+            <h1>
+                TO-DO LIST
+            </h1>
+        </div>
         <div class="buttonIn">
-            <input type="text" id="Task" name="Task" placeholder="Add a task to do">
-            <button onclick="addTask()" >Add Task</button>
+            <input type="text" id="Input-Task" name="Input-Task" placeholder="Add a task to do">
+            <button onclick="addTask()">Add Task</button>
         </div>
     </div>
-    <div id="toDoList"></div>
+    <div class="content--body">
+        <ol id="toDoList">
+        </ol>
+    </div>
 </body>
+
 </html>
 <link rel="stylesheet" href="../css/index.css">
