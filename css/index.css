@@ -16,26 +16,15 @@ div#leveTilt{
     position: relative;
 }
 
-input {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    outline: none;
-    height: 30px;
-    border-radius: 5px;
+.content--body{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button {
-    position: absolute;
-    top: 0;
-    border-radius: 5px;
-    right: 0px;
-    z-index: 2;
-    border: none;
-    top: 2px;
-    height: 30px;
-    cursor: pointer;
+ol li{
+    list-style-type: none;
+    background-color: black;
     color: white;
-    background-color: hsl(128, 100%, 56%);
-    transform: translateX(2px);
-}
+    margin: 10px;
+  }
