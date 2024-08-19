@@ -11,12 +11,10 @@
 </head>
 
 <body>
-    <div id="titulo" name="titulo">
-        <div id="leveTilt" name="leveTilt">
+    <div class="titulo">
             <h1>
                 TO-DO LIST
             </h1>
-        </div>
         <div class="buttonIn">
             <input type="text" id="Input-Task" name="Input-Task" placeholder="Add a task to do">
             <button onclick="addTask()">Add Task</button>
@@ -25,6 +23,11 @@
     <div class="content--body">
         <ol id="toDoList" class="toDoList">
         </ol>
+    </div>
+    <div class="titulo">
+    <h1>FINISHED</h1>
+    <ol id="finished" class="finished">
+    </ol>
     </div>
 </body>
 
