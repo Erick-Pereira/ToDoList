@@ -1,36 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        To-do List
-    </title>
+    <meta name="theme-color" content="#333">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-    <div class="titulo">
-            <h1>
-                TO-DO LIST
-            </h1>
-        <div class="buttonIn">
-            <input type="text" id="Input-Task" name="Input-Task" placeholder="Add a task to do">
-            <button onclick="addTask()">Add Task</button>
-        </div>
+    <div class="container">
+        <header class="header">
+            <h1>TO-DO LIST</h1>
+            <div class="input-group">
+                <input type="text" id="Input-Task" placeholder="Add a task to do">
+                <button id="add-task-button">Add Task</button>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="list-section">
+                <h2>To-Do</h2>
+                <ol id="toDoList" class="task-list"></ol>
+            </section>
+            <section class="list-section">
+                <h2>Finished</h2>
+                <ol id="finished" class="task-list"></ol>
+            </section>
+        </main>
     </div>
-    <div class="content--body">
-        <ol id="toDoList" class="toDoList">
-        </ol>
-    </div>
-    <div class="titulo">
-    <h1>FINISHED</h1>
-    <ol id="finished" class="finished">
-    </ol>
-    </div>
+    <script src="../javascript/index.js"></script>
 </body>
 
 </html>
-<script src="../javascript/index.js"></script>
-<link rel="stylesheet" href="../css/index.css">
