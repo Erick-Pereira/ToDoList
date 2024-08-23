@@ -48,6 +48,16 @@ input[type="text"] {
     outline: none;
 }
 
+select {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 16px;
+    outline: none;
+}
+
 button {
     background-color: #007bff;
     color: #e0e0e0;
@@ -98,6 +108,18 @@ h2 {
     gap: 10px;
     overflow: hidden; /* Impede que o conteúdo vaze para fora */
     word-wrap: break-word; /* Quebra a linha se o texto for muito longo */
+}
+
+.task-list li.low {
+    border-left: 5px solid green;
+}
+
+.task-list li.medium {
+    border-left: 5px solid orange;
+}
+
+.task-list li.high {
+    border-left: 5px solid red;
 }
 
 .task-list input[type="checkbox"] {
@@ -159,4 +181,22 @@ h2 {
     .task-list span {
         width: 100%;
     }
+}
+.filter-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-group label {
+    margin-right: 10px;
+}
+
+.filter-group select {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 16px;
+    outline: none;
 }
