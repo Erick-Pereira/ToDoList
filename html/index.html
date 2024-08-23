@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#333">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>TO-DO LIST</h1>
+            <div class="input-group">
+                <input type="text" id="Input-Task" placeholder="Add a task to do">
+                <select id="Input-Priority">
+                    <option value="low">Baixa</option>
+                    <option value="medium">Média</option>
+                    <option value="high">Alta</option>
+                </select>
+                <button id="add-task-button">Add Task</button>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="filter-group">
+                <label for="filter-by">Ordenar por:</label>
+                <select id="filter-by">
+                    <option value="name">Nome</option>
+                    <option value="priority">Prioridade</option>
+                    <option value="date">Data</option>
+                    <option value="status">Status</option>
+                </select>
+            </div>
+            <section class="list-section">
+                <h2>To-Do</h2>
+                <ol id="toDoList" class="task-list"></ol>
+            </section>
+            <section class="list-section">
+                <h2>Finished</h2>
+                <ol id="finished" class="task-list"></ol>
+            </section>
+        </main>
+    </div>
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>
