@@ -1,0 +1,17 @@
+{
+ "to-do-list-gn":[{
+    "id": 1,
+    "name": "input.value",
+    "finished": false,
+    "priority": "priority",
+    "date": "2024-09-06"
+ }], 
+
+ "to-do-list-dn":[{
+    "id": 1,
+    "name": "input.value",
+    "finished": false,
+    "priority": "priority",
+    "date": "2024-09-06"
+ }]
+}
