@@ -41,15 +41,12 @@ async function addTask() {
 
 function showValues(data) {
   let filter = document.getElementById("filter-by").value;
-  console.log(data);
   // Ordena a lista com base no filtro
   data.sort((a, b) => {
     if (filter === "name") {
       return a.name.localeCompare(b.name);
     } else if (filter === "priority") {
       //Consertado, agora ordena corretamente da maior prioridade para a menor
-      console.log(data);
-
       return a.priority.localeCompare(b.priority);
     } else if (filter === "date") {
       return new Date(a.date) - new Date(b.date);
@@ -99,7 +96,6 @@ function showFinishedTasks(data) {
 }
 
 async function removeItem(id) {
-  console.log(id);
   await fetch(`${localStorageKey1}/${id}`, {
     method: "DELETE",
   });
