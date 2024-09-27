@@ -1,10 +1,11 @@
-name: ci
+name: CI
 on:
   pull_request:
 jobs:
-  runs-on: ubuntu-latest
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  steps:
-    - name: Say Hello World!
-      run: echo 'Hello World!'
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Say Hello World!
+        run: echo 'Hello World!'
